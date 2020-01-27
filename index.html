@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <style>
+        .wrap {
+  width: 400px;
+  height: 200px;
+  margin: 200px auto;
+  position: relative;
+  overflow: hidden; }
+  .wrap .img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    animation: slide-show 12s linear infinite; }
+  .wrap .img1 {
+    animation-delay: 0s; }
+  .wrap .img2 {
+    animation-delay: 4s; }
+  .wrap .img3 {
+    animation-delay: 8s; }
+
+@keyframes slide-show {
+  0% {
+    opacity: 0;
+    transform: scale(1); }
+  33% {
+    opacity: 1; }
+  66% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: scale(1.5); } }
+    </style>
+    <title>slideShow</title>
+</head>
+<body>
+    <div class='wrap'>
+        <img class="img img3" src='./img/pig3.jpg' alt=''>
+        <img class="img img2" src='./img/pig2.jpg' alt=''>
+        <img class="img img1" src='./img/pig1.jpg' alt=''>
+    </div>
+</body>
+</html>
